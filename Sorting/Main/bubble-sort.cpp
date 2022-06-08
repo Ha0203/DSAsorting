@@ -1,6 +1,6 @@
 #include"Header.h"
 
-void bublesort(int a[], int n) {
+void bubble_sort(int*& a, int n) {
 	int k = 0;
 	while (k < n - 1) {
 

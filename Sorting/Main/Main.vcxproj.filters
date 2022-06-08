@@ -21,5 +21,8 @@
     <ClCompile Include="bubble-sort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="selection_sort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
