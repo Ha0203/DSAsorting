@@ -1,6 +1,6 @@
 #include "Header.h"
 
-void heapRebuild(int a[], int pos, int n, long long& comparisons)
+void heapRebuild(int a[], int pos, int n, unsigned long long& comparisons)
 {
 
 	while (++comparisons && 2 * pos + 1 < n)
@@ -15,12 +15,12 @@ void heapRebuild(int a[], int pos, int n, long long& comparisons)
 		pos = j;
 	}
 }
-void heapConstruct(int a[], int n, long long& comparisons)
+void heapConstruct(int a[], int n, unsigned long long& comparisons)
 {
 	for (int i = (n - 1) / 2;++comparisons && i >= 0; i--)
 		heapRebuild(a, i, n, comparisons);
 }
-void heapSort(int a[], int n, long long comparisons)
+void heapSort(int a[], int n,unsigned long long comparisons)
 {
 	comparisons = 0;
 	heapConstruct(a, n, comparisons);

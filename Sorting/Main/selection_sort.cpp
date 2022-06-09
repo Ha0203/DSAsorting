@@ -1,6 +1,6 @@
 #include "Header.h"
 
-void selection_sort(int*& a, int n, long long& comparisons)
+void selection_sort(int*& a, int n,unsigned long long& comparisons)
 {
 	comparisons = 0;
 	for (int i = 0; i < n - 1; i++)
