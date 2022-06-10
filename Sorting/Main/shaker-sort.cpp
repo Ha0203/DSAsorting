@@ -1,6 +1,6 @@
 #include"Header.h"
 
-void shakersort(int a[], int n) {
+void shaker_sort(int a[], int n) {
 	int left = 0, right = n - 1;
 	while (right - left > 1) {
 		for (int i = left; i < right; i++) {
