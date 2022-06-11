@@ -9,6 +9,7 @@
     <ClCompile Include="utility.cpp" />
     <ClCompile Include="counting_sort.cpp" />
     <ClCompile Include="insertion_sort.cpp" />
+    <ClCompile Include="flash_sort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
