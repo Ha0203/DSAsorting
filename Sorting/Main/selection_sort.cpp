@@ -1,6 +1,6 @@
 #include "Header.h"
 
-void selection_sort(int*& a, int n,unsigned long long& comparisons)
+void selection_sort(int*& a, int n, unsigned long long& comparisons)
 {
 	comparisons = 0;
 	int i = 0;
@@ -17,6 +17,7 @@ void selection_sort(int*& a, int n,unsigned long long& comparisons)
 		swap(a[k], a[i]);
 		i++;
 	}
+}
 	/*for (int i = 0; i < n - 1; i++)
 	{
 		int k = i;
@@ -28,4 +29,4 @@ void selection_sort(int*& a, int n,unsigned long long& comparisons)
 		}
 		swap(a[k], a[i]);
 	}*/
-}
+
