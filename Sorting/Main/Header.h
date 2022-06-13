@@ -1,8 +1,13 @@
 #pragma once
 #include <iostream>
+#include <vector>
+#include <string>
+#include <iomanip>
+#include <fstream>
+using namespace std;
 
 void swap(int& a, int& b);
-void bublesort(int a[], int n);
+void bubble_sort(int a[], int n);
 void shaker_sort(int a[], int n);
 void counting_sort(int*& a, int n);
 void counting_sort2(int*& a, int n, int place);
