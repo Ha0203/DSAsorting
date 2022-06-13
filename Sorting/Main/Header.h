@@ -10,3 +10,7 @@ void radix_sort(int*& a, int n);
 void merge(int* a, int l, int m, int r);
 void merge_sort(int* a, int l, int r);
 void insertion_sort(int a[], int n);
+void selection_sort(int*& a, int n, unsigned long long& comparisons);
+void heapRebuild(int a[], int pos, int n, unsigned long long& comparisons);
+void heapConstruct(int a[], int n, unsigned long long& comparisons);
+void heapSort(int a[], int n, unsigned long long comparisons);
