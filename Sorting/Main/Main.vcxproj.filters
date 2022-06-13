@@ -11,6 +11,7 @@
     <ClCompile Include="counting_sort.cpp" />
     <ClCompile Include="radix_sort.cpp" />
     <ClCompile Include="merge_sort.cpp" />
+    <ClCompile Include="quick_sort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
