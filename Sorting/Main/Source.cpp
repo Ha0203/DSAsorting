@@ -27,13 +27,13 @@ void command_1(int argc, char* argv[])
 		char c = argv[2][2];
 		
 		if (argv[2] == "selection-sort")
-			selection_sort(a, n, comparisons);
+			selection_sort_com(a, n, comparisons);
 		else if (argv[2] == "insertion-sort")
-			insertion_sort(a, n, comparisons);
+			insertion_sort_com(a, n, comparisons);
 		else if (argv[2] == "bubble-sort")
-			bubble_sort(a, n, comparisons);
+			bubble_sort_com(a, n, comparisons);
 		else if (argv[2] == "shaker-sort")
-			shaker_sort(a, n, comparisons);
+			shaker_sort_count(a, n, comparisons);
 		else if (argv[2] == "shell-sort")
 			shell_sort(a, n, comparisons);
 
