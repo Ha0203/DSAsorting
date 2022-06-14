@@ -40,7 +40,7 @@ void heapConstruct_count(int a[], int n, unsigned long long& comparisons)
 	for (int i = (n - 1) / 2;++comparisons && i >= 0; i--)
 		heapRebuild_count(a, i, n, comparisons);
 }
-void heapSort_ori(int a[], int n)
+void heap_sort_ori(int a[], int n)
 {
 	heapConstruct_ori(a, n);
 	int r = n - 1;
@@ -51,7 +51,7 @@ void heapSort_ori(int a[], int n)
 		r--;
 	}
 }
-void heapSort_count(int a[], int n,unsigned long long comparisons)
+void heap_sort_count(int a[], int n,unsigned long long& comparisons)
 {
 	comparisons = 0;
 	heapConstruct_count(a, n, comparisons);
