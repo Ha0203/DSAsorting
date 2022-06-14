@@ -14,7 +14,7 @@ void bubble_sort_ori(int*& a, int n)
 		k++;
 	}
 }
-void bubble_sort_com(int*& a, int n,unsigned long long& comp)
+void bubble_sort_count(int*& a, int n,unsigned long long& comp)
 {
 	int k = 0;
 	while (++comp && k < n - 1)

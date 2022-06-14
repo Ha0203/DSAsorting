@@ -34,7 +34,7 @@ void merge_ori(int* a, int l, int m, int r) {
 	}
 	delete[] a1, a2;
 }
-void merge_com(int* a, int l, int m, int r, unsigned long long& comp) {
+void merge_count(int* a, int l, int m, int r, unsigned long long& comp) {
 	int n1 = m - l + 1;
 	int n2 = r - m;
 	int* a1 = new int[n1];
@@ -76,11 +76,11 @@ void merge_sort_ori(int* a, int l, int r) {
 	merge_sort_ori(a, m + 1, r);
 	merge_ori(a, l, m, r);
 }
-void merge_sort_com(int* a, int l, int r, unsigned long long& comp) {
+void merge_sort_count(int* a, int l, int r, unsigned long long& comp) {
 	if (++comp && l >= r)
 		return;
 	int m = (l + r) / 2;
-	merge_sort_com(a, l, m, comp);
-	merge_sort_com(a, m + 1, r, comp);
-	merge_com(a, l, m, r, comp);
+	merge_sort_count(a, l, m, comp);
+	merge_sort_count(a, m + 1, r, comp);
+	merge_count(a, l, m, r, comp);
 }

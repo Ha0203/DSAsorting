@@ -17,7 +17,7 @@ void selection_sort_ori(int*& a, int n)
 		i++;
 	}
 }
-void selection_sort_com(int*& a, int n, unsigned long long& comparisons)
+void selection_sort_count(int*& a, int n, unsigned long long& comparisons)
 {
 	comparisons = 0;
 	int i = 0;

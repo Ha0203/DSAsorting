@@ -29,7 +29,7 @@ void counting_sort_ori(int*& a, int n)
 	delete[] count;
 	a = res;
 }
-void counting_sort_com(int*& a, int n, unsigned long long& comp)
+void counting_sort_count(int*& a, int n, unsigned long long& comp)
 {
 	int min = a[0];
 	int max = a[0];

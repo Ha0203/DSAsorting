@@ -16,7 +16,7 @@ void insertion_sort_ori(int a[], int n)
         a[j + 1] = guard;
     }
 }
-void insertion_sort_com(int a[], int n, unsigned long long& comp)
+void insertion_sort_count(int a[], int n, unsigned long long& comp)
 {
     int guard = 0, j = 0;
     for (int i = 1; ++comp && i < n; i++)

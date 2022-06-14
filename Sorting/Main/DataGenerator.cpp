@@ -1,4 +1,5 @@
-﻿#include <iostream>
+﻿#include"Header.h"
+#include <iostream>
 #include <fstream>
 #include <cmath>
 #include <time.h>
