@@ -1,6 +1,6 @@
 #include "Header.h"
 
-void heapRebuild_ori(int a[], int pos, int n)
+void heapRebuild_ori(int* a, int pos, int n)
 {
 
 	while (2 * pos + 1 < n)
@@ -15,7 +15,7 @@ void heapRebuild_ori(int a[], int pos, int n)
 		pos = j;
 	}
 }
-void heapRebuild_count(int a[], int pos, int n, unsigned long long& comparisons)
+void heapRebuild_count(int* a, int pos, int n, unsigned long long& comparisons)
 {
 
 	while (++comparisons && 2 * pos + 1 < n)
@@ -30,17 +30,17 @@ void heapRebuild_count(int a[], int pos, int n, unsigned long long& comparisons)
 		pos = j;
 	}
 }
-void heapConstruct_ori(int a[], int n)
+void heapConstruct_ori(int* a, int n)
 {
 	for (int i = (n - 1) / 2; i >= 0; i--)
 		heapRebuild_ori(a, i, n);
 }
-void heapConstruct_count(int a[], int n, unsigned long long& comparisons)
+void heapConstruct_count(int* a, int n, unsigned long long& comparisons)
 {
 	for (int i = (n - 1) / 2;++comparisons && i >= 0; i--)
 		heapRebuild_count(a, i, n, comparisons);
 }
-void heap_sort_ori(int a[], int n)
+void heap_sort_ori(int* a, int n)
 {
 	heapConstruct_ori(a, n);
 	int r = n - 1;
@@ -51,7 +51,7 @@ void heap_sort_ori(int a[], int n)
 		r--;
 	}
 }
-void heap_sort_count(int a[], int n,unsigned long long& comparisons)
+void heap_sort_count(int* a, int n,unsigned long long& comparisons)
 {
 	comparisons = 0;
 	heapConstruct_count(a, n, comparisons);

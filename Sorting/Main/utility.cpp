@@ -91,7 +91,7 @@ void chooseSort(int sortType, int a[], int n, double& runningtime, unsigned long
 		break;
 	}*/
 		
-	case 6: /*{
+	case 6: {
 		auto start = std::chrono::high_resolution_clock::now();
 		heap_sort_ori(a, n);
 		auto end = std::chrono::high_resolution_clock::now();
@@ -101,7 +101,7 @@ void chooseSort(int sortType, int a[], int n, double& runningtime, unsigned long
 		if (checkSort(a, n) == 0)
 			cout << "Sort Fail" << endl;
 		break;
-	}*/
+	}
 		
 	case 7: {
 		auto start = std::chrono::high_resolution_clock::now();

@@ -1,5 +1,5 @@
 #include"Header.h"
-
+//Dang loi!!
 void counting_sort2_ori(int*& a, int n, int place) 
 {
 	int max = 9;

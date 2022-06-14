@@ -12,7 +12,7 @@
     <ClCompile Include="merge_sort.cpp" />
     <ClCompile Include="insertion_sort.cpp" />
     <ClCompile Include="flash_sort.cpp" />
-    <ClCompile Include="DataGenerator.cpp" />
+    <ClCompile Include="Sort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />

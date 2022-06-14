@@ -161,15 +161,15 @@ int main(int argc, char** argv)
 		}
 
 		if ((string)argv[3] == "selection-sort") {
-			cout << "Selection Sort";
+			cout << "Selection Sort" << endl;
 			sortTypeb = 1;
 		}
 		else if ((string)argv[3] == "insertion-sort") {
-			cout << "Insertion Sort";
+			cout << "Insertion Sort" << endl;
 			sortTypeb = 2;
 		}
 		else if ((string)argv[3] == "bubble-sort") {
-			cout << "Bubble Sort";
+			cout << "Bubble Sort" << endl;
 			sortTypeb = 3;
 		}
 		else if ((string)argv[3] == "shaker-sort") {
@@ -177,31 +177,31 @@ int main(int argc, char** argv)
 			sortTypeb = 4;
 		}
 		else if ((string)argv[3] == "shell-sort") {
-			cout << "Shell Sort";
+			cout << "Shell Sort" << endl;
 			sortTypeb = 5;
 		}
 		else if ((string)argv[3] == "heap-sort") {
-			cout << "Heap Sort";
+			cout << "Heap Sort" << endl;
 			sortTypeb = 6;
 		}
 		else if ((string)argv[3] == "merge-sort") {
-			cout << "Merge Sort";
+			cout << "Merge Sort" << endl;
 			sortTypeb = 7;
 		}
 		else if ((string)argv[3] == "quick-sort") {
-			cout << "Quick Sort";
+			cout << "Quick Sort" << endl;
 			sortTypeb = 8;
 		}
 		else if ((string)argv[3] == "counting-sort") {
-			cout << "Counting Sort";
+			cout << "Counting Sort" << endl;
 			sortTypeb = 9;
 		}
 		else if ((string)argv[3] == "radix-sort") {
-			cout << "Radix Sort";
+			cout << "Radix Sort" << endl;
 			sortTypeb = 10;
 		}
 		else if ((string)argv[3] == "flash-sort") {
-			cout << "Flash Sort";
+			cout << "Flash Sort" << endl;
 			sortTypeb = 11;
 		}
 		else {
