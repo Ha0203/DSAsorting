@@ -31,3 +31,7 @@ void heapConstruct_ori(int a[], int n);
 void heapConstruct_com(int a[], int n, unsigned long long& comparisons);
 void heapSort_ori(int a[], int n);
 void heapSort_com(int a[], int n, unsigned long long comparisons);
+void Sort_MedianOf3(int a[], int left, int right, int mid, unsigned long long& count_comparision1);
+int partition(int a[], int left, int right, unsigned long long& count_comparision2);
+void quicksort(int a[], int n, int left, int right, unsigned long long& count_comparision3);
+void Shellsort(int a[], int n, unsigned long long& count_comparision);
