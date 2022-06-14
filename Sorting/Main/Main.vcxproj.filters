@@ -13,6 +13,8 @@
     <ClCompile Include="insertion_sort.cpp" />
     <ClCompile Include="flash_sort.cpp" />
     <ClCompile Include="Sort.cpp" />
+    <ClCompile Include="quick-sort.cpp" />
+    <ClCompile Include="shell-sort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
