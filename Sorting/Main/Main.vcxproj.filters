@@ -4,7 +4,6 @@
     <ClCompile Include="bubble-sort.cpp" />
     <ClCompile Include="counting_sort.cpp" />
     <ClCompile Include="merge_sort.cpp" />
-    <ClCompile Include="quick_sort.cpp" />
     <ClCompile Include="radix_sort.cpp" />
     <ClCompile Include="flash_sort.cpp" />
     <ClCompile Include="insertion_sort.cpp" />
@@ -16,6 +15,7 @@
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="utility.cpp" />
     <ClCompile Include="DataGenerator.cpp" />
+    <ClCompile Include="quick-sort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />

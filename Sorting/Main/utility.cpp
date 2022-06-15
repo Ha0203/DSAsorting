@@ -79,7 +79,7 @@ void chooseSort(int sortType, int a[], int n, double& runningtime, unsigned long
 			cout << "Sort Fail" << endl;
 		break;
 	}
-	case 5: /*{
+	case 5: {
 		auto start = std::chrono::high_resolution_clock::now();
 		shell_sort_ori(a, n);
 		auto end = std::chrono::high_resolution_clock::now();
@@ -89,7 +89,7 @@ void chooseSort(int sortType, int a[], int n, double& runningtime, unsigned long
 		if (checkSort(a, n) == 0)
 			cout << "Sort Fail" << endl;
 		break;
-	}*/
+	}
 		
 	case 6: {
 		auto start = std::chrono::high_resolution_clock::now();
