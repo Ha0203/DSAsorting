@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\BaiTrenLop\DSA\DataGenerator.cpp" />
     <ClCompile Include="bubble-sort.cpp" />
     <ClCompile Include="shaker-sort.cpp" />
     <ClCompile Include="heap_sort.cpp" />
@@ -11,7 +10,11 @@
     <ClCompile Include="counting_sort.cpp" />
     <ClCompile Include="radix_sort.cpp" />
     <ClCompile Include="merge_sort.cpp" />
-    <ClCompile Include="quick_sort.cpp" />
+    <ClCompile Include="insertion_sort.cpp" />
+    <ClCompile Include="flash_sort.cpp" />
+    <ClCompile Include="Sort.cpp" />
+    <ClCompile Include="quick-sort.cpp" />
+    <ClCompile Include="shell-sort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />

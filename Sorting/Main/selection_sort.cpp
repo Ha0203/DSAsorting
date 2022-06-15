@@ -1,6 +1,23 @@
 #include "Header.h"
 
-void selection_sort(int*& a, int n, unsigned long long& comparisons)
+void selection_sort_ori(int*& a, int n)
+{
+	int i = 0;
+	while (i < n - 1)
+	{
+		int k = i;
+		int j = i + 1;
+		while (j < n)
+		{
+			if (a[k] > a[j])
+				k = j;
+			j++;
+		}
+		swap(a[k], a[i]);
+		i++;
+	}
+}
+void selection_sort_count(int*& a, int n, unsigned long long& comparisons)
 {
 	comparisons = 0;
 	int i = 0;
