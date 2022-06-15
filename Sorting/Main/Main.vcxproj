@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="bubble-sort.cpp" />
     <ClCompile Include="counting_sort.cpp" />
+    <ClCompile Include="DataGenerator.cpp" />
     <ClCompile Include="merge_sort.cpp" />
     <ClCompile Include="quick_sort.cpp" />
     <ClCompile Include="radix_sort.cpp" />

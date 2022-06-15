@@ -352,7 +352,7 @@ void counting_sort2_ori(int*& a, int n, int place)
 		count[(a[i] / place) % 10]++;
 	for (int i = 1; i < max + 1; i++)
 		count[i] += count[i - 1];
-	for (int i = 0; i < n; i++) {
+	for (int i = n - 1; i >= 0; i--) {
 		res[--count[(a[i] / place) % 10]] = a[i];
 	}
 	delete[] a;
@@ -374,7 +374,7 @@ void counting_sort2_count(int*& a, int n, int place, unsigned long long& comp)
 		count[(a[i] / place) % 10]++;
 	for (int i = 1; ++comp && i < max + 1; i++)
 		count[i] += count[i - 1];
-	for (int i = 0; ++comp && i < n; i++) {
+	for (int i = n - 1; ++comp && i >= 0; i--) {
 		res[--count[(a[i] / place) % 10]] = a[i];
 	}
 	delete[] a;
