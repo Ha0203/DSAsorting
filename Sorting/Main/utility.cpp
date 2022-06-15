@@ -115,17 +115,17 @@ void chooseSort(int sortType, int a[], int n, double& runningtime, unsigned long
 		break;
 	}
 		
-	case 8: /*{
+	case 8: {
 		auto start = std::chrono::high_resolution_clock::now();
-		quick_sort_ori(a, n);
+		quick_sort_ori(a, n, 0, n);
 		auto end = std::chrono::high_resolution_clock::now();
 		auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 		runningtime = duration.count();
-		quick_sort_count(a, n, comparisons);
+		quick_sort_count(a, n, 0, n, comparisons);
 		if (checkSort(a, n) == 0)
 			cout << "Sort Fail" << endl;
 		break;
-	}*/
+	}
 		
 	case 9: {
 		auto start = std::chrono::high_resolution_clock::now();
