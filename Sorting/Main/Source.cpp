@@ -72,18 +72,24 @@ int main(int argc, char** argv)
 				chooseSort(sortType, a, n, runningtime, comparisons);
 				choosePrint(runningtime, comparisons, 4, argv);
 
+				runningtime = 0;
+				comparisons = 0;
 				cout << endl;
 				cout << "Input order: Nearly Sorted" << endl;
 				cout << "----------------------------" << endl;
 				chooseSort(sortType, a1, n, runningtime, comparisons);
 				choosePrint(runningtime, comparisons, 4, argv);
 
+				runningtime = 0;
+				comparisons = 0;
 				cout << endl;
 				cout << "Input order:  Sorted" << endl;
 				cout << "----------------------------" << endl;
 				chooseSort(sortType, a2, n, runningtime, comparisons);
 				choosePrint(runningtime, comparisons, 4, argv);
 
+				runningtime = 0;
+				comparisons = 0;
 				cout << endl;
 				cout << "Input order:  Reversed" << endl;
 				cout << "----------------------------" << endl;
