@@ -579,7 +579,7 @@ void Sort_MedianOf3_ori(int a[], int left, int right, int mid) {
 	if (a[mid] < a[left])
 		swap(a[mid], a[left]);
 }
-int partition_count(int a[], int left, int right) {
+int partition_ori(int a[], int left, int right) {
 	int mid = (left + right) / 2;
 	Sort_MedianOf3_ori(a, left, right, mid);
 	swap(a[mid], a[right]);
@@ -602,7 +602,7 @@ void quick_sort_ori(int a[], int n, int left, int right)
 {
 	if (left < right)
 	{
-		int pivot_index = partition_count(a, left, right);
+		int pivot_index = partition_ori(a, left, right);
 
 		quick_sort_ori(a, n, left, pivot_index - 1);
 

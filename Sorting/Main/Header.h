@@ -49,7 +49,7 @@ void heapConstruct_count(int* a, int n, unsigned long long& comparisons);
 void shell_sort_ori(int a[], int n);
 void shell_sort_count(int a[], int n, unsigned long long& count_comparision);
 void Sort_MedianOf3_ori(int a[], int left, int right, int mid);
-int partition_count(int a[], int left, int right);
+int partition_ori(int a[], int left, int right);
 void quick_sort_ori(int a[], int n, int left, int right);
 void Sort_MedianOf3_count(int a[], int left, int right, int mid, unsigned long long& count_comparision1);
 int partition_count(int a[], int left, int right, unsigned long long& count_comparision2);
