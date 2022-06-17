@@ -36,130 +36,174 @@ bool checkSort(int a[], int n) {
 void chooseSort(int sortType, int a[], int n, double& runningtime, unsigned long long& comparisons) {
 	switch (sortType) {
 	case 1: {
+		int* temp = new int[n];
+		copyTo(a, temp, n);
 		auto start = std::chrono::high_resolution_clock::now();
 		selection_sort_ori(a, n);
 		auto end = std::chrono::high_resolution_clock::now();
 		auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 		runningtime = duration.count();
+		copyTo(temp, a, n);
 		selection_sort_count(a, n, comparisons);
 		if (checkSort(a, n) == 0)
 			cout << "Sort Fail" << endl;
+		delete[] temp;
 		break;
 	}
 	case 2: {
+		int* temp = new int[n];
+		copyTo(a, temp, n);
 		auto start = std::chrono::high_resolution_clock::now();
 		insertion_sort_ori(a, n);
 		auto end = std::chrono::high_resolution_clock::now();
 		auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 		runningtime = duration.count();
+		copyTo(temp, a, n);
 		insertion_sort_count(a, n, comparisons);
 		if (checkSort(a, n) == 0)
 			cout << "Sort Fail" << endl;
+		delete[] temp;
 		break;
 	}
 	case 3: {
+		int* temp = new int[n];
+		copyTo(a, temp, n);
 		auto start = std::chrono::high_resolution_clock::now();
 		bubble_sort_ori(a, n);
 		auto end = std::chrono::high_resolution_clock::now();
 		auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 		runningtime = duration.count();
+		copyTo(temp, a, n);
 		bubble_sort_count(a, n, comparisons);
 		if (checkSort(a, n) == 0)
 			cout << "Sort Fail" << endl;
+		delete[] temp;
 		break;
 	}
 	case 4: {
+		int* temp = new int[n];
+		copyTo(a, temp, n);
 		auto start = std::chrono::high_resolution_clock::now();
 		shaker_sort_ori(a, n);
 		auto end = std::chrono::high_resolution_clock::now();
 		auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 		runningtime = duration.count();
+		copyTo(temp, a, n);
 		shaker_sort_count(a, n, comparisons);
 		if (checkSort(a, n) == 0)
 			cout << "Sort Fail" << endl;
+		delete[] temp;
 		break;
 	}
 	case 5: {
+		int* temp = new int[n];
+		copyTo(a, temp, n);
 		auto start = std::chrono::high_resolution_clock::now();
 		shell_sort_ori(a, n);
 		auto end = std::chrono::high_resolution_clock::now();
 		auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 		runningtime = duration.count();
+		copyTo(temp, a, n);
 		shell_sort_count(a, n, comparisons);
 		if (checkSort(a, n) == 0)
 			cout << "Sort Fail" << endl;
+		delete[] temp;
 		break;
 	}
 		
 	case 6: {
+		int* temp = new int[n];
+		copyTo(a, temp, n);
 		auto start = std::chrono::high_resolution_clock::now();
 		heap_sort_ori(a, n);
 		auto end = std::chrono::high_resolution_clock::now();
 		auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 		runningtime = duration.count();
+		copyTo(temp, a, n);
 		heap_sort_count(a, n, comparisons);
 		if (checkSort(a, n) == 0)
 			cout << "Sort Fail" << endl;
+		delete[] temp;
 		break;
 	}
 		
 	case 7: {
+		int* temp = new int[n];
+		copyTo(a, temp, n);
 		auto start = std::chrono::high_resolution_clock::now();
 		merge_sort_ori(a, 0, n);
 		auto end = std::chrono::high_resolution_clock::now();
 		auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 		runningtime = duration.count();
+		copyTo(temp, a, n);
 		merge_sort_count(a, 0, n, comparisons);
 		if (checkSort(a, n) == 0)
 			cout << "Sort Fail" << endl;
+		delete[] temp;
 		break;
 	}
 		
 	case 8: {
+		int* temp = new int[n];
+		copyTo(a, temp, n);
 		auto start = std::chrono::high_resolution_clock::now();
 		quick_sort_ori(a, n, 0, n - 1);
 		auto end = std::chrono::high_resolution_clock::now();
 		auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 		runningtime = duration.count();
+		copyTo(temp, a, n);
 		quick_sort_count(a, n, 0, n - 1, comparisons);
 		if (checkSort(a, n) == 0)
 			cout << "Sort Fail" << endl;
+		delete[] temp;
 		break;
 	}
 		
 	case 9: {
+		int* temp = new int[n];
+		copyTo(a, temp, n);
 		auto start = std::chrono::high_resolution_clock::now();
 		counting_sort_ori(a, n);
 		auto end = std::chrono::high_resolution_clock::now();
 		auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 		runningtime = duration.count();
+		copyTo(temp, a, n);
 		counting_sort_count(a, n, comparisons);
 		if (checkSort(a, n) == 0)
 			cout << "Sort Fail" << endl;
+		delete[] temp;
 		break;
 	}
 		
 	case 10: {
+		int* temp = new int[n];
+		copyTo(a, temp, n);
 		auto start = std::chrono::high_resolution_clock::now();
 		radix_sort_ori(a, n);
 		auto end = std::chrono::high_resolution_clock::now();
 		auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 		runningtime = duration.count();
+		copyTo(temp, a, n);
 		radix_sort_count(a, n, comparisons);
 		if (checkSort(a, n) == 0)
 			cout << "Sort Fail" << endl;
+		delete[] temp;
 		break;
 	}
 		
 	case 11: {
+		int* temp = new int[n];
+		copyTo(a, temp, n);
 		auto start = std::chrono::high_resolution_clock::now();
 		flash_sort_ori(a, n);
 		auto end = std::chrono::high_resolution_clock::now();
 		auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 		runningtime = duration.count();
+		copyTo(temp, a, n);
 		flash_sort_count(a, n, comparisons);
 		if (checkSort(a, n) == 0)
 			cout << "Sort Fail" << endl;
+		delete[] temp;
 		break;
 	}
 		
@@ -312,4 +356,9 @@ void GenerateData(int a[], int n, int dataType)
 	default:
 		printf("Error: unknown data type!\n");
 	}
+}
+
+void copyTo(int* a, int* b, int n) {
+	for (int i = 0; i < n; i++)
+		b[i] = a[i];
 }

@@ -54,3 +54,4 @@ void quick_sort_ori(int a[], int n, int left, int right);
 void Sort_MedianOf3_count(int a[], int left, int right, int mid, unsigned long long& count_comparision1);
 int partition_count(int a[], int left, int right, unsigned long long& count_comparision2);
 void quick_sort_count(int a[], int n, int left, int right, unsigned long long& count_comparision3);
+void copyTo(int* a, int* b, int n);
